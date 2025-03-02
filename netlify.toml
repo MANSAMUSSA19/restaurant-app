@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "web-build"
+
+[context.production]
+  branch = "main"
+
+[[plugins]]
+  package = "@netlify/plugin-react-native-web"
